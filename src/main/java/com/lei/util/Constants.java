@@ -1,2 +1,6 @@
-package com.lei.util;public class Constants {
+package com.lei.util;
+
+public class Constants {
+    public final static String USER_SESSION="usersession";
+
 }
