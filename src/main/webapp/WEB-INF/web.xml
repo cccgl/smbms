@@ -49,6 +49,14 @@
         <filter-name>sysfilter</filter-name>
         <url-pattern>/jsp/*</url-pattern>
     </filter-mapping>
+    <servlet>
+        <servlet-name>userservlet</servlet-name>
+        <servlet-class>com.lei.servlet.user.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userservlet</servlet-name>
+        <url-pattern>/jsp/user.do</url-pattern>
+    </servlet-mapping>
 </web-app>
 
 

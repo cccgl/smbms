@@ -22,7 +22,7 @@ public class SysFilter implements Filter {
         User user=(User)request.getSession().getAttribute(Constants.USER_SESSION);
         if(user==null)
         {
-            response.sendRedirect("../error.jsp");
+            response.sendRedirect(request.getContextPath() + "/logerror.jsp");
         }else
         {
             filterChain.doFilter(servletRequest,servletResponse);
